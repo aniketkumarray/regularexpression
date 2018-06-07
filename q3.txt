@@ -1,0 +1,9 @@
+import re
+sen = "A, very very; irregular_sentence"
+s1 = re.sub('\W', ' ', sen)
+s2 = re.sub('_', ' ', s1)
+print('Desired output: ', s2)
+
+
+output:
+Desired output:  A  very very  irregular sentence
